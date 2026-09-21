@@ -15,6 +15,7 @@ Cask definitions reside in the `Casks/` directory using a flat layout (not shard
 
 ```text
 Casks/
+├── capsawake.rb
 └── command-input.rb
 ```
 

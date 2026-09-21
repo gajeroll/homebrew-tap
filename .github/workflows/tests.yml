@@ -1,0 +1,23 @@
+name: Cask audit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    name: brew style and audit
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v5
+      - name: Tap this repository
+        run: |
+          brew tap gajeroll/tap "$(pwd)"
+      - name: Style
+        run: brew style --cask gajeroll/tap
+      - name: Audit
+        run: brew audit --cask --online --tap=gajeroll/tap

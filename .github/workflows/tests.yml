@@ -13,7 +13,7 @@ jobs:
     name: brew style and audit
     runs-on: macos-15
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
       - name: Tap this repository
         run: |
           brew tap gajeroll/tap "$(pwd)"

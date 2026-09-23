@@ -1,6 +1,6 @@
 cask "capsawake" do
-  version "1.0.0"
-  sha256 "fdd075f35e85d7e3866ffa019803f421408a4b8489475008edb8210c664ffbf7"
+  version "0.1.0"
+  sha256 "08544744c7b6684b3389e0722080ad53104944cd4510e8faa02010a482b172fa"
 
   url "https://github.com/gajeroll/capsawake/releases/download/v#{version}/CapsAwake-#{version}.zip"
   name "CapsAwake"
